@@ -37,7 +37,28 @@ google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(myLatlng);
 });
 
+function getLastImages(data){
+    var images = [];
+    data.items.forEach(function(element) {
+        if((element.type == 'image') && ( images.length < 4 ) && (element.images.standard_resolution !== null)){
+            images.push(element);
+        }
+    });
+    return images;
+}
+
+function bindInsta(data){
+    images = getLastImages(data);
+    console.log(images);
+    console.log('ooo');
+}
+
 function init() {
+
+    $.get("https://instagram.com/esquissetattoo/media", function( data ) {
+        bindInsta(data);
+    });
+    
 
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
