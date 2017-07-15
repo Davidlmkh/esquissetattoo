@@ -1,7 +1,8 @@
-Dans l'ordre :
+﻿Dans l'ordre :
 
-- achat nom de domaine
-    + voir doigts gratuits et remplir flamme torche
+- doigts gratuits et remplir flamme torche
 - avis facebook a la place des avis google
 - api instagram dernières photos sur site ( 4 environ )
 - visite 360
+- supprimer hébergement hostinger a la fin
+- référencement ?
