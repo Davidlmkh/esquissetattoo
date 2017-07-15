@@ -9,4 +9,6 @@
 - api instagram dernières photos sur site ( 4 environ )
 - visite 360
 - supprimer hébergement hostinger a la fin
-- référencement ?
+- google pagespeed
+- référencement ? voir basiques + mots clés + reprendre choses de l'acien site
+- redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
