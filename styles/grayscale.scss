@@ -1,6 +1,7 @@
 @import "variables";
 
 body {
+    -webkit-tap-highlight-color: rgba(white, 0.2);
     width: 100%;
     height: 100%;
     font-family: 'Cinzel', serif;
@@ -448,6 +449,28 @@ img::-moz-selection {
     background: transparent;
 }
 
-body {
-    -webkit-tap-highlight-color: rgba(white, 0.2);
+.insta-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 240px;
+    border: 2px solid $primary;
+    padding: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.insta-container{
+    overflow: hidden;
+    padding: 30px;
+    max-height: inherit;
+    transition: all .1s ease-in-out;
+}
+
+.insta-container:hover{
+    .insta-img{
+        padding: 0px;
+    }
+}
+
+.insta-g-container{
+    max-height: 300px;
 }

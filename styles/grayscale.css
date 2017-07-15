@@ -1,4 +1,5 @@
 body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
   width: 100%;
   height: 100%;
   font-family: 'Cinzel', serif;
@@ -84,11 +85,11 @@ a {
 
 .sep-primary {
   height: 1px;
-  background: transparent;
-  background: -webkit-linear-gradient(left, transparent, darkgoldenrod, transparent);
-  background: -moz-linear-gradient(left, transparent, darkgoldenrod, transparent);
-  background: -o-linear-gradient(left, transparent, darkgoldenrod, transparent);
-  background: linear-gradient(to right, transparent, darkgoldenrod, transparent);
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
   margin-top: 5px;
   margin-bottom: 5px; }
 
@@ -346,7 +347,24 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
-body {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+.insta-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 240px;
+  border: 2px solid darkgoldenrod;
+  padding: 5px;
+  transition: all .1s ease-in-out; }
+
+.insta-container {
+  overflow: hidden;
+  padding: 30px;
+  max-height: inherit;
+  transition: all .1s ease-in-out; }
+
+.insta-container:hover .insta-img {
+  padding: 0px; }
+
+.insta-g-container {
+  max-height: 300px; }
 
 /*# sourceMappingURL=grayscale.css.map */
