@@ -63,12 +63,29 @@ function bindInsta(data){
     $('#insta-4').find('img')[0].src = images[3].images.standard_resolution.url;
 }
 
+
+function callbackInstagram(data){
+        console.log('callback');
+	    var prettyJSON = JSON.stringify(data, null, 4);
+    }
+
 function init() {
 
-    $.get("https://instagram.com/esquissetattoo/media", function( data ) {
-        bindInsta(data);
-    });
+    $.ajax({
+        type: "get",
+        url: "https://api.instagram.com/v1/users/self/media/recent?access_token=298072855.516b8a9.fe13708fae194e7fb840f2460f5691f9",
+        success: function (data) {
+            console.log(data);
+            bindInsta(data);
+        },
+    })
+
     
+
+    // $.get("https://instagram.com/esquissetattoo/media", function( data ) {
+    //     bindInsta(data);
+    // });
+
 
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -210,7 +227,7 @@ function init() {
         position: myLatLng,
         map: map,
         icon: image
-    });  
+    });
 
     service = new google.maps.places.PlacesService(map);
 
