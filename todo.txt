@@ -1,7 +1,5 @@
 ﻿Dans l'ordre :
 
-- continuer branche insta !
-- fix les boutons du haut qui s'empilent sans espace sur petit device
 - corriger bug de pas www. ne marche pas 
 
 - doigts gratuits et remplir flamme torche
