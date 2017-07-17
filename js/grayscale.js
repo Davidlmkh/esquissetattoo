@@ -50,7 +50,17 @@ function getLastImages(data){
 function bindInsta(data){
     images = getLastImages(data);
     console.log(images);
-    console.log('ooo');
+    $('#insta-1').attr('href', images[0].link);
+    $('#insta-1').find('img')[0].src = images[0].images.standard_resolution.url;
+
+    $('#insta-2').attr('href', images[1].link);
+    $('#insta-2').find('img')[0].src = images[1].images.standard_resolution.url;
+
+    $('#insta-3').attr('href', images[2].link);
+    $('#insta-3').find('img')[0].src = images[2].images.standard_resolution.url;
+
+    $('#insta-4').attr('href', images[3].link);
+    $('#insta-4').find('img')[0].src = images[3].images.standard_resolution.url;
 }
 
 function init() {
