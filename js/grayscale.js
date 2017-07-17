@@ -37,7 +37,38 @@ google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(myLatlng);
 });
 
+function getLastImages(data){
+    var images = [];
+    data.items.forEach(function(element) {
+        if((element.type == 'image') && ( images.length < 4 ) && (element.images.standard_resolution !== null)){
+            images.push(element);
+        }
+    });
+    return images;
+}
+
+function bindInsta(data){
+    images = getLastImages(data);
+    console.log(images);
+    $('#insta-1').attr('href', images[0].link);
+    $('#insta-1').find('img')[0].src = images[0].images.standard_resolution.url;
+
+    $('#insta-2').attr('href', images[1].link);
+    $('#insta-2').find('img')[0].src = images[1].images.standard_resolution.url;
+
+    $('#insta-3').attr('href', images[2].link);
+    $('#insta-3').find('img')[0].src = images[2].images.standard_resolution.url;
+
+    $('#insta-4').attr('href', images[3].link);
+    $('#insta-4').find('img')[0].src = images[3].images.standard_resolution.url;
+}
+
 function init() {
+
+    $.get("https://instagram.com/esquissetattoo/media", function( data ) {
+        bindInsta(data);
+    });
+    
 
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions

@@ -1,8 +1,14 @@
 ﻿Dans l'ordre :
 
+- continuer branche insta !
+- fix les boutons du haut qui s'empilent sans espace sur petit device
+- corriger bug de pas www. ne marche pas 
+
 - doigts gratuits et remplir flamme torche
 - avis facebook a la place des avis google
 - api instagram dernières photos sur site ( 4 environ )
 - visite 360
 - supprimer hébergement hostinger a la fin
-- référencement ?
+- google pagespeed
+- référencement ? voir basiques + mots clés + reprendre choses de l'acien site
+- redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
