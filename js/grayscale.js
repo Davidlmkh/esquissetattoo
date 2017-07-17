@@ -1,5 +1,7 @@
 var myLatlng = new google.maps.LatLng(45.798739, 4.831777);
 var googlePlaceId = "ChIJr-qnlSvr9EcRCozPqLCmyDE";
+var instaToken = "298072855.516b8a9.fe13708fae194e7fb840f2460f5691f9";
+var instaUserId = "5418254715";
 var service;
 
 function collapseNavbar() {
@@ -39,7 +41,7 @@ google.maps.event.addDomListener(window, 'resize', function() {
 
 function getLastImages(data){
     var images = [];
-    data.items.forEach(function(element) {
+    data.forEach(function(element) {
         if((element.type == 'image') && ( images.length < 4 ) && (element.images.standard_resolution !== null)){
             images.push(element);
         }
@@ -49,7 +51,6 @@ function getLastImages(data){
 
 function bindInsta(data){
     images = getLastImages(data);
-    console.log(images);
     $('#insta-1').attr('href', images[0].link);
     $('#insta-1').find('img')[0].src = images[0].images.standard_resolution.url;
 
@@ -63,32 +64,18 @@ function bindInsta(data){
     $('#insta-4').find('img')[0].src = images[3].images.standard_resolution.url;
 }
 
-
-function callbackInstagram(data){
-        console.log('callback');
-	    var prettyJSON = JSON.stringify(data, null, 4);
-    }
-
 function init() {
 
     $.ajax({
         type: "get",
-        url: "https://api.instagram.com/v1/users/self/media/recent?access_token=298072855.516b8a9.fe13708fae194e7fb840f2460f5691f9",
+        dataType: 'jsonp',
+        url: "https://api.instagram.com/v1/users/"+ instaUserId + "/media/recent?access_token="+instaToken,
         success: function (data) {
             console.log(data);
-            bindInsta(data);
+            bindInsta(data.data);
         },
     })
 
-    
-
-    // $.get("https://instagram.com/esquissetattoo/media", function( data ) {
-    //     bindInsta(data);
-    // });
-
-
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 15,

@@ -1,9 +1,9 @@
 ﻿Dans l'ordre :
 
 - doigts gratuits et remplir flamme torche
-- avis facebook a la place des avis google
+- avis facebook super complexe à récupérer - choisir 5 meilleurs et récup embeded
 - visite 360
-- supprimer hébergement hostinger a la fin
 - google pagespeed
 - référencement ? voir basiques + mots clés + reprendre choses de l'acien site
 - redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
+- supprimer hébergement hostinger a la fin
