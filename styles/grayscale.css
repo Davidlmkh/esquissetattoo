@@ -83,11 +83,11 @@ a {
 
 .sep-primary {
   height: 1px;
-  background: rgba(0, 0, 0, 0);
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: transparent;
+  background: -webkit-linear-gradient(left, transparent, darkgoldenrod, transparent);
+  background: -moz-linear-gradient(left, transparent, darkgoldenrod, transparent);
+  background: -o-linear-gradient(left, transparent, darkgoldenrod, transparent);
+  background: linear-gradient(to right, transparent, darkgoldenrod, transparent);
   margin-top: 5px;
   margin-bottom: 5px; }
 
@@ -199,18 +199,20 @@ a {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid darkgoldenrod;
   border-radius: 100% !important;
   font-size: 40px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: transparent;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out; }
   .btn-circle:hover, .btn-circle:focus {
     outline: none;
     color: white;
-    background: rgba(255, 255, 255, 0.1); }
+    background: darkgoldenrod; }
+  .btn-circle i {
+    margin-top: 10px; }
   .btn-circle i.animated {
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
@@ -369,5 +371,10 @@ img::-moz-selection {
 
 .insta-g-container {
   max-height: 500px; }
+
+#contact a {
+  transition: all .2s ease-in-out; }
+#contact a:hover {
+  letter-spacing: 3px; }
 
 /*# sourceMappingURL=grayscale.css.map */
