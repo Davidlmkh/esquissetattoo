@@ -71,7 +71,6 @@ function init() {
         dataType: 'jsonp',
         url: "https://api.instagram.com/v1/users/"+ instaUserId + "/media/recent?access_token="+instaToken,
         success: function (data) {
-            console.log(data);
             bindInsta(data.data);
         },
     })
