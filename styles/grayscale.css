@@ -83,11 +83,11 @@ a {
 
 .sep-primary {
   height: 1px;
-  background: transparent;
-  background: -webkit-linear-gradient(left, transparent, darkgoldenrod, transparent);
-  background: -moz-linear-gradient(left, transparent, darkgoldenrod, transparent);
-  background: -o-linear-gradient(left, transparent, darkgoldenrod, transparent);
-  background: linear-gradient(to right, transparent, darkgoldenrod, transparent);
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), darkgoldenrod, rgba(0, 0, 0, 0));
   margin-top: 5px;
   margin-bottom: 5px; }
 
@@ -103,6 +103,40 @@ a {
   40% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+.tattooer {
+  text-align: -webkit-center;
+  margin-bottom: 50px; }
+  .tattooer .tattooer-img {
+    border: 3px solid darkgoldenrod;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    transition: all .2s ease-in-out; }
+
+.tattooer:hover .tattooer-img {
+  filter: none; }
+
+.btn-tattooer {
+  width: 100%;
+  max-width: 130px; }
+
+.a-right {
+  text-align: right; }
+
+.a-left {
+  text-align: left; }
+
+.tattooer-name {
+  margin-top: 25px;
+  color: darkgoldenrod; }
+
+.tattooer-bio {
+  margin: 20px; }
+  .tattooer-bio p {
+    font-size: 16px !important;
+    line-height: 1.6; }
+
 .light {
   font-weight: 400;
   color: darkgoldenrod; }
@@ -115,6 +149,10 @@ a {
   margin-bottom: 60px; }
   .margin-60 li {
     margin: 20px; }
+
+#tattooers {
+  margin-top: 100px;
+  margin-bottom: 100px; }
 
 .navbar-custom {
   margin-bottom: 0;
@@ -210,7 +248,7 @@ a {
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out; }
-  .btn-circle:hover, .btn-circle:focus {
+  .btn-circle:hover {
     outline: none;
     color: white;
     background: darkgoldenrod; }

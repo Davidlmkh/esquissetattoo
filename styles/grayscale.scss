@@ -127,6 +127,54 @@ a {
   }
 }
 
+.tattooer{
+    text-align: -webkit-center;
+    margin-bottom: 50px;
+    .tattooer-img{
+        border: 3px solid $primary;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.tattooer:hover{
+    .tattooer-img{
+        filter: none;
+    }
+}
+
+.btn-tattooer{
+    width: 100%;
+    max-width: 130px;
+    :hover{
+        
+    }
+}
+
+.a-right{
+    text-align: right;
+}
+
+.a-left{
+    text-align: left;
+}
+
+.tattooer-name{
+    margin-top: 25px;
+    color: $primary;
+}
+
+.tattooer-bio{
+    margin: 20px;
+    p{
+        font-size: 16px !important;
+        line-height: 1.6;
+    }
+}
+
 .light {
     font-weight: 400;
     color: $primary;
@@ -142,6 +190,11 @@ a {
     li{
         margin: 20px;
     }
+}
+
+#tattooers{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .navbar-custom {
@@ -266,8 +319,7 @@ a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    &:hover,
-    &:focus {
+    &:hover {
         outline: none;
         color: white;
         background: $primary;
