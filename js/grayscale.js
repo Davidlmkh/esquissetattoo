@@ -232,10 +232,10 @@ function init() {
 }
 
 function bindReviews(reviews){
-    const namePrefix = "#review-name";
-    const imgPrefix = "#review-image";
-    const textPrefix = "#review-text";
-    const datePrefix = "#review-date";
+    var namePrefix = "#review-name";
+    var imgPrefix = "#review-image";
+    var textPrefix = "#review-text";
+    var datePrefix = "#review-date";
 
     for(var i = 0; i < 5; i++){
         var review = reviews[i];

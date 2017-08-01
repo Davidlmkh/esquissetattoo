@@ -1,8 +1,10 @@
 ﻿Dans l'ordre :
 
 - remplir flamme torche ? voir autre tattoo a la fin ?
-- contenu l'équipe avec photos et bio
-- avis facebook super complexe à récupérer - choisir 5 meilleurs et récup embeded
+- équipe a alimenter
+- avis facebook :
+    appeller fb -> https://stackoverflow.com/questions/17315839/get-facebook-graph-api-page-review
+    get token -> http://aseriesoftubes.com/articles/obtaining-facebook-page-access-tokens-the-4-step-program/
 - visite 360
 - google pagespeed
 - redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
