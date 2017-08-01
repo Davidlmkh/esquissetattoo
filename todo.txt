@@ -6,6 +6,5 @@
     appeller fb -> https://stackoverflow.com/questions/17315839/get-facebook-graph-api-page-review
     get token -> http://aseriesoftubes.com/articles/obtaining-facebook-page-access-tokens-the-4-step-program/
 - visite 360
-- google pagespeed
 - redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
 - supprimer hébergement hostinger a la fin
