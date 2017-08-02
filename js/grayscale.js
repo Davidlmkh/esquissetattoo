@@ -3,6 +3,9 @@ var googlePlaceId = "ChIJr-qnlSvr9EcRCozPqLCmyDE";
 var instaToken = "298072855.516b8a9.fe13708fae194e7fb840f2460f5691f9";
 var instaUserId = "5418254715";
 var service;
+var inter;
+
+var reviewShowed;
 
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
@@ -66,6 +69,8 @@ function bindInsta(data){
 
 function init() {
 
+    $('#rev1, #rev2, #rev3, #rev4').hide();
+
     $.ajax({
         type: "get",
         dataType: 'jsonp',
@@ -74,6 +79,10 @@ function init() {
             bindInsta(data.data);
         },
     })
+
+    reviewShowed = $('#rev0');
+
+    inter = window.setInterval(function() {nextReview()}, 5000);
 
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -222,11 +231,9 @@ function init() {
     service.getDetails({
         placeId: googlePlaceId
     }, function (place, status) {
+        this.hideLoader();
         if (status === google.maps.places.PlacesServiceStatus.OK) {
-            this.hideLoader();
             this.bindReviews(place.reviews);
-        }else{
-            this.hideLoader();
         }
     });
 }
@@ -253,4 +260,14 @@ function showLoader(){
 
 function hideLoader(){
     $('#reviews-loader').fadeOut('fast');
+}
+
+function nextReview(){
+    var i = parseInt(reviewShowed.get(0).id.substr(3, 1));
+    reviewShowed.fadeOut(300, function(){
+        var nexti = i < 4 ? i + 1 : 0;
+        var rev = '#rev' + nexti;
+        reviewShowed = $(rev);    
+        $(rev).fadeIn(300);
+    })
 }

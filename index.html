@@ -115,38 +115,31 @@
                     </div>
                 </div>
                 <div id="reviews-container">
-                    <div class="row webkit-center margin-60" id="rev0">
+                    <div class="row webkit-center margin-60" id="rev0" onclick="nextReview(this)">
                             <img id="review-image0" class="img-responsive black-white imgrev" src="" />
                             <span id="review-name0">nom</span>
                             <span id="review-date0">date</span></br>
                             <span id="review-text0" class="italic">text</span>
                     </div> 
-                    <div class="sep-primary"></div>
-                    <div class="row webkit-center margin-60" id="rev1">
+                    <div class="row webkit-center margin-60" id="rev1" onclick="nextReview(this)">
                             <img id="review-image1" class="img-responsive black-white imgrev" src="" />
                             <span id="review-name1">nom</span>
                             <span id="review-date1">date</span></br>
                             <span id="review-text1" class="italic">text</span>
                     </div> 
-                    <div class="sep-primary"></div>
-                    
-                    <div class="row webkit-center margin-60" id="rev2">
+                    <div class="row webkit-center margin-60" id="rev2" onclick="nextReview(this)">
                             <img id="review-image2" class="img-responsive black-white imgrev" src="" />
                             <span id="review-name2">nom</span>
                             <span id="review-date2">date</span></br>
                             <span id="review-text2" class="italic">text</span>
                     </div> 
-                    <div class="sep-primary"></div>
-                    
-                    <div class="row webkit-center margin-60" id="rev3">
+                    <div class="row webkit-center margin-60" id="rev3" onclick="nextReview(this)">
                             <img id="review-image3" class="img-responsive black-white imgrev" src="" />
                             <span id="review-name3">nom</span>
                             <span id="review-date3">date</span></br>
                             <span id="review-text3" class="italic">text</span>
-                    </div> 
-                    <div class="sep-primary"></div>
-                    
-                    <div class="row webkit-center margin-60" id="rev4">
+                    </div>                     
+                    <div class="row webkit-center margin-60" id="rev4" onclick="nextReview(this)">
                             <img id="review-image4" class="img-responsive black-white imgrev" src="" />
                             <span id="review-name4">nom</span>
                             <span id="review-date4">date</span></br>
@@ -154,7 +147,7 @@
                     </div> 
                     <ul class="list-inline margin-60">
                     <li>
-                        <a href="http://search.google.com/local/reviews?placeid=ChIJr-qnlSvr9EcRCozPqLCmyDE" class="btn btn-default btn-lg"><i class="fa fa-google"></i> <span class="network-name">Tous les avis</span></a>
+                        <a href="http://search.google.com/local/reviews?placeid=ChIJr-qnlSvr9EcRCozPqLCmyDE" class="btn btn-default btn-lg"><i class="fa fa-google"></i> <span class="network-name">Plus d'avis</span></a>
                     </li>
                 </ul>
                 </div>
@@ -266,7 +259,7 @@
                     <h2>Soins</h2>
                     <p>
                         Vous pouvez télécharger nos indications de soin ci-dessous, ou pas.</br>
-                        ( mais on vous le conseille quand même )
+                        (mais on vous le conseille quand même)
                     </p>
                     <ul class="list-inline margin-60">
                         <li>
@@ -307,8 +300,11 @@
         </div>
     </footer>
 
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
