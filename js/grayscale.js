@@ -81,7 +81,7 @@ function init() {
     })
 
     reviewShowed = $('#rev0');
-
+    setSelector();
     inter = window.setInterval(function() {nextReview()}, 5000);
 
     var mapOptions = {
@@ -262,12 +262,40 @@ function hideLoader(){
     $('#reviews-loader').fadeOut('fast');
 }
 
+function showReview(n){
+    var i = parseInt(reviewShowed.get(0).id.substr(3, 1));
+    if(i == n || n > 4 || n < 0){
+        return;
+    }
+    reviewShowed.fadeOut(300, function(){
+        var rev = '#rev' + n;
+        reviewShowed = $(rev);
+        setSelector();    
+        $(rev).fadeIn(300);
+    });
+}
+
+function setSelector(){
+    var i = parseInt(reviewShowed.get(0).id.substr(3, 1));
+    var sel = '#sel' + i;
+
+    $('#sel0').removeClass('active');
+    $('#sel1').removeClass('active');
+    $('#sel2').removeClass('active');
+    $('#sel3').removeClass('active');
+    $('#sel4').removeClass('active');
+    
+    $(sel).addClass('active');
+}
+
 function nextReview(){
     var i = parseInt(reviewShowed.get(0).id.substr(3, 1));
     reviewShowed.fadeOut(300, function(){
         var nexti = i < 4 ? i + 1 : 0;
         var rev = '#rev' + nexti;
-        reviewShowed = $(rev);    
+        reviewShowed = $(rev);
+        setSelector();    
         $(rev).fadeIn(300);
-    })
+    });
+
 }

@@ -13,17 +13,13 @@
 
     <title>L'esquisse tattoo</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- icone d'onglet -->
     <link rel="shortcut icon" type="image/x-icon" href="./img/tattoo-machine-map.png" />
 
-    <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
 
-    <!-- Theme CSS -->
     <link href="./styles/grayscale.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,7 +33,6 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -49,10 +44,8 @@
                 </a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -73,12 +66,9 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
@@ -100,7 +90,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section class="container content-section text-center">
         <div class="row">
             <div id="reviews" class="col-lg-8 col-lg-offset-2" id="google-container">
@@ -142,11 +131,12 @@
                             <span id="review-date4">date</span></br>
                             <span id="review-text4" class="italic">text</span>
                     </div> 
-                    <ul class="list-inline margin-60">
-                    <li>
-                        <a href="http://search.google.com/local/reviews?placeid=ChIJr-qnlSvr9EcRCozPqLCmyDE" class="btn btn-default btn-lg"><i class="fa fa-google"></i> <span class="network-name">Plus d'avis</span></a>
-                    </li>
-                </ul>
+                    <i id="sel0" class="fa fa-circle selector" onclick="showReview(0)"></i>
+                    <i id="sel1" class="fa fa-circle selector" onclick="showReview(1)"></i>
+                    <i id="sel2" class="fa fa-circle selector" onclick="showReview(2)"></i>
+                    <i id="sel3" class="fa fa-circle selector" onclick="showReview(3)"></i>
+                    <i id="sel4" class="fa fa-circle selector" onclick="showReview(4)"></i></br>
+                    <a href="http://search.google.com/local/reviews?placeid=ChIJr-qnlSvr9EcRCozPqLCmyDE" class="btn btn-default btn-lg morereviews"><i class="fa fa-google"></i> <span class="network-name">Plus d'avis</span></a>
                 </div>
             </div>
         </div>
@@ -207,7 +197,6 @@
             </div>
         </div>
     </section>
-    <!-- Download Section -->
     <section id="galery" class="container content-section text-center">
         <div class="download-section">
             <div class="container">
@@ -268,7 +257,6 @@
         </div>
     </section>
     <div class="sep-primary"></div>
-    <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -287,10 +275,8 @@
         </div>
     </section>
 
-    <!-- Map Section -->
     <div id="map"></div>
 
-    <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; L'esquisse 2014</p>
@@ -298,22 +284,17 @@
     </footer>
 
 
-    <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery/jquery.easing.min.js"></script>
 
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIyAmN52LolJQa7_y1JC7Nv2MQpSLxsrc&libraries=places"></script>
 
-    <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
 
 </body>

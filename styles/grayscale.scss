@@ -92,6 +92,21 @@ a {
     }
 }
 
+.selector{
+    margin: 0 5px;
+    color: gray;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.selector.active{
+    color: $primary;
+}
+
+.morereviews{
+    margin: 50px 0;
+}
+
 .imgrev{
     max-width: 80px;
     margin-bottom: 30px;
