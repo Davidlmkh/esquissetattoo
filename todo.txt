@@ -2,6 +2,7 @@
 
 - remplir flamme torche ? voir autre tattoo a la fin ?
 - équipe a alimenter
+- logo nico
 - avis facebook :
     appeller fb -> https://stackoverflow.com/questions/17315839/get-facebook-graph-api-page-review
     get token -> http://aseriesoftubes.com/articles/obtaining-facebook-page-access-tokens-the-4-step-program/
