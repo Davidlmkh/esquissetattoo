@@ -146,11 +146,8 @@ a {
     text-align: -webkit-center;
     margin-bottom: 50px;
     .tattooer-img{
-        border: 3px solid $primary;
-        border-radius: 50%;
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
+        width: 250px;
+        height: 250px;
         transition: all .5s ease-in-out;
     }
 }
@@ -529,6 +526,7 @@ img::-moz-selection {
     max-height: 440px;
     opacity: 0.8;
     padding: 5px;
+    border-radius: 100px;
     transition: all .1s ease-in-out;
 }
 
