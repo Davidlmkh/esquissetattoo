@@ -1,7 +1,6 @@
 ﻿Dans l'ordre :
 
 - hydre
-- équipe a alimenter
 - logo nico
 - visite 360
 - redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
