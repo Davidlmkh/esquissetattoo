@@ -1,8 +1,6 @@
 ﻿Dans l'ordre :
 
 - hydre
-- logo nico
 - visite 360
-- redirection de l'ancien site sur le nouveau jusqu'a ce qu'il ne soit plus indexé 
 - supprimer hébergement hostinger a la fin
 - migrer compte google business sur son mail+ lui installer
