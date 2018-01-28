@@ -1,6 +1,5 @@
 ﻿Dans l'ordre :
 
-- hydre
 - visite 360
 - supprimer hébergement hostinger a la fin
 - migrer compte google business sur son mail+ lui installer
