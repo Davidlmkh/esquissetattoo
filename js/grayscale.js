@@ -1,6 +1,6 @@
 var myLatlng = new google.maps.LatLng(45.798739, 4.831777);
 var googlePlaceId = "ChIJr-qnlSvr9EcRCozPqLCmyDE";
-var instaToken = "472718352.1677ed0.81bdb11fc9884050aac198d0bdc96ca0";
+var instaToken = "5418254715.1677ed0.205ea4ac026d49769a99dcc5d9d96cf5";
 var service;
 var inter;
 
