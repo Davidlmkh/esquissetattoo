@@ -1,7 +1,6 @@
 var myLatlng = new google.maps.LatLng(45.798739, 4.831777);
 var googlePlaceId = "ChIJr-qnlSvr9EcRCozPqLCmyDE";
-var instaToken = "298072855.516b8a9.fe13708fae194e7fb840f2460f5691f9";
-var instaUserId = "5418254715";
+var instaToken = "472718352.1677ed0.81bdb11fc9884050aac198d0bdc96ca0";
 var service;
 var inter;
 
@@ -74,10 +73,14 @@ function init() {
     $.ajax({
         type: "get",
         dataType: 'jsonp',
-        url: "https://api.instagram.com/v1/users/"+ instaUserId + "/media/recent?access_token="+instaToken,
+        url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + instaToken,
         success: function (data) {
+            console.log('coucou');
             bindInsta(data.data);
-        },
+        }
+        ,error: function(err) {
+            console.log('error');
+        }
     })
 
     reviewShowed = $('#rev0');
