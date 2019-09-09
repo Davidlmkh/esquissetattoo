@@ -75,7 +75,6 @@ function init() {
         dataType: 'jsonp',
         url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + instaToken,
         success: function (data) {
-            console.log('coucou');
             bindInsta(data.data);
         }
         ,error: function(err) {
